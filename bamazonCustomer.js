@@ -24,7 +24,7 @@ function updateProducts(item, amount_purchased){
         ], (err, res) => {
             if (err) throw err;
             // console.log(res.affectedRows + " products updated!\n");
-            console.log("Your purchase of " + item.name + ' will cost: ' + item.price * amount_purchased);
+            console.log("Your purchase of " + item.name + ' will cost: $' + item.price * amount_purchased);
             // End the connection here and not in the startup connection 
             // Since javascript is asyncronous
             connection.end();
